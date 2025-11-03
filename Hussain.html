@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f8fa;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  padding: 15px 0;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { color: #fff; font-size: 1.5rem; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a:hover { color: #00eaff; }
+
+/* Hero Section */
+.hero {
+  height: 85vh;
+  background: linear-gradient(to right, #000, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+  background: white;
+  color: #111;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover { background: #111; color: #fff; }
+
+/* About */
+.about { padding: 80px 10%; text-align: center; }
+
+/* skills */
+.skills { padding: 80px 10%; text-align: center; }
+
+
+/* Projects */
+.projects { padding: 80px 10%; text-align: center; }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 25px;
+}
+.project-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.project-img {
+  width: 50%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 3rem;
+  background: #eef2ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.linkedin {
+  left: 0px;
+  position: absolute;
+  left: 25vw;
+
+}
+.linkedin a {
+  background-color: blue;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1 class="logo">MyPortfolio</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="img.jfif" class="profile-img" />
+    <h2><span>Shaik Hussain</span></h2>
+    <p>Web Developer & python</p><br>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    
+
+Hellol I'm Shaik Hussain, a passionate Python Developer and Data Analyst dedicated to transforming data into meaning insiglés puding chat ficut, 
+and user-friendly web applications that help make  decisions through data driven solutions. 
+With practical experience in Pyffian, SQL, HTML, CSS, and Dangub projects that combine functionally with elegant design. 
+I'm constantly inarning and and explonng advanced lechnologies such as Machine Learning and Always lose world challenges and drive innovation.
+
+  </p>
+</section>
+
+<section id="projects" class="projects">
+  <h2>My Skills</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="HODinterface1.jpg" class="project-img" />
+      <p>python</p>
+    </div>
+
+    <div class="project-card">
+      <img src="pbi.jfif" class="project-img" />
+      <p>Power BI</p>
+    </div>
+
+    <div class="project-card">
+      <img src="sql.jfif" class="project-img" />
+      <p>SQL</p>
+    </div>
+
+        <div class="project-card">
+      <img src="html.jfif" class="project-img" />
+      <p>HTML</p>
+    </div>
+
+        <div class="project-card">
+      <img src="css.jfif" class="project-img" />
+      <p>CSS</p>
+    </div>
+
+        <div class="project-card">
+      <img src="js.jfif" class="project-img" />
+      <p>Java Script</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="hand.jfif" class="project-img" />
+      <h3>Project One</h3>
+      <p>Hand Gestcure recognisasion using Machine Learning</p>
+    </div>
+
+    <div class="project-card">
+      <img src="turtle.jfif" class="project-img" />
+      <h3>Project two</h3>
+      <p>turtle win game using python programming</p>
+    </div>
+
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button><br>
+    </form>
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/feed/" class="btn">linked in</a>
+      <a href="https://web.whatsapp.com/" class="btn">phone</a>
+      </div>
+  </section>
+
+  <p>© 2025 Hussain Shaik | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
