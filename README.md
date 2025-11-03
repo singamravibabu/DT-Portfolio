@@ -16,4 +16,8 @@
 - Name: Srikanth Reddy
 - Batch: 14
 
+<<<<<<< HEAD
 # getting error
+=======
+# Hello world!
+>>>>>>> ae86c597e747bbe57822eefd2874b79613ff96c2
