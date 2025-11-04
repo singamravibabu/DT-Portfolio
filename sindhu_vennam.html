@@ -1,12 +1,11 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Adusumalli Yashwanth — Portfolio</title>
-<style>
-  /* ---------- Variables & base ---------- */
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <style>
+            /* ---------- Variables & base ---------- */
   :root{
     --bg: #0d1c31;
     --card: #071021;
@@ -257,121 +256,106 @@
   /* small utility */
   a.link-muted { color:var(--muted); text-decoration:none; font-weight:600; }
   .small { font-size:0.85rem; color:var(--muted); }
-</style>
-</head>
-<body>
-  <div class="page">
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="brand">
+                    <div>
+                        <div class="title">Sindhu Vennam</div>
+                        <div class="subtitle">Data analytics</div>
+                    </div>
+                </div>
+                <nav class="site-nav">
+                    <a href="#about">About</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+            <main class="grid-main">
+                <section class="hero card">
+                    <div class="photo">
+                        <img src="C:\Users\DELL\Pictures\sindhu.jpeg" alt="Sindhu">
+                    </div>
+                    <div class="intro">
+                        <h1 id="hero-title">Hello - I'm Sindhu Vennam</h1>
+                        <p class="small">B.Tech Computer Science graduate,Eager to learn and grow, I am committed to contributing to team goals and building a successful career 
+through hard work, dedication, and a continuous desire to improve my skills.</p>                     
+                           <div class="stats">
+                            <div class="stat"><div class="num">Fresher</div><div class="label">Years</div></div>
+                            <div class="stat"><div class="num">2+</div><div class="label">Projects</div></div>
+                            <div class="stat"><div class="num">Open</div><div class="label">To Work</div></div>
+                        </div>
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    <div class="card about" id="about">
+                        <h2>About Me</h2>
+                        <p>I am a B.Tech Computer Science graduate with experience in data analysis .Motivated and detail-oriented fresher seeking an entry-level position to apply my skills and knowledge in a dynamic organization .</p>
+                    </div>
+                    <div class="card contact" id="contact">
+                        <h2>Contact</h2>
+                        <p class="small">
+                            Email: <a class="link-muted" href="mailto:sindhuvennam400@gmail.com">sindhuvennam400@gmail.com</a><br>
+                            Location: Hyderabad, India
+                        </p>
+                    </div>
+                </aside>
+                <section class="content">
+                    <div class="card projects" id="projects">
+                        <h2>Selected Projects</h2>
+                        <div class="project-grid">
+                            <article class="project">
+                                <div class="thumb">Project 1</div>
+                                <div class="meta">
+                                    <h3 id="p1">Fake News Detection System Using Machine Learning</h3>
+                                    <p class="small">Fake News Detection Using Machine Learning
+Developed a website to Detect the Fake news . In This work, we propose a system for Fake news detection that uses 
+machine learning techniques we used term frequency inverse document frequency. Fake News Enhanced the models 
+efficiency with SVM . we propose also a dataset of fake and true news to train the proposed system. </p>
+                                </div>
+                            </article>
 
-    <header class="site-header">
-      <div class="brand">
-        <div>
-          <div class="title">Yashwanth Adusumalli</div>
-          <div class="subtitle">Developer · Data Science · Data Analyst</div>
+                            <article class="project">
+                                <div class="thumb">Project 2</div>
+                                <div class="meta">
+                                    <h3 id="p2">E-Exam Attendence Monitoring System</h3>
+                                    <p class="small">A unique webcam-based monitoring system for e-exam attendance is proposed in this paper with the purpose of making 
+the attendance process of students at online exams more straightforward The system, which is capable of working 
+with standard webcams, uses the facial recognization technology, in real time.</p>
+                                </div>
+                            </article>
+
+                            <article class="project">
+                                <div class="thumb">Project 3</div>
+                                <div class="meta">
+                                    <h3 id="p3">Design System</h3>
+                                    <p class="small">A component library with tokens, docs, and examples that scales</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Get in Touch</h2>
+                        <form class="contact-form" action="#" method="post">
+                            <label for="fname">Name</label>
+                            <input id="fname" name="name" type="text" placeholder="Your Full Name" required>
+                            <label for="emailf">Email</label>
+                            <input id="emailf" name="email" type="email" placeholder="you@example.com" required>
+                            <label for="message">Message</label>
+                            <input id="message" name="message" placeholder="say hi - What do you want to build">
+
+                            <div class="cta">
+                                <button class="btn" type="submit">Send Message</button>
+                            </div>
+                        </form>                        
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer small" style="text-align:center; opacity:0.9;">
+                © <span id="year"></span> Your Name — Built with HTML & CSS Grid
+            </footer>
         </div>
-      </div>
-
-      <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main class="grid-main">
-
-      <section class="hero card">
-        <div class="photo">
-          <img src="C:\Users\admin\OneDrive\Pictures\my_pic.JPG" alt="Yashwanth Adusumalli smiling portrait">
-        </div>
-
-        <div class="intro">
-          <h1 id="hero-title">Hello — I'm Yashwanth Adusumalli</h1>
-          <p class="small">I build clear, usable interfaces and craft beautiful front-end experiences. I.</p>
-
-          <div class="stats">
-            <div class="stat"><div class="num">2+</div><div class="label">Years</div></div>
-            <div class="stat"><div class="num">20+</div><div class="label">Projects</div></div>
-            <div class="stat"><div class="num">Open</div><div class="label">To Work</div></div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="sidebar">
-        <div class="card about" id="about">
-          <h2>About me</h2>
-          <p>I am a UI-focused developer building accessible, high-performance web apps. I enjoy translating complex problems into simple interfaces and writing maintainable code.</p>
-        </div>
-
-        <div class="card contact" id="contact">
-          <h2>Contact</h2>
-          <p class="small">Email: <a class="link-muted" href="mailto:adusumalliyashwanth1214@gmail.com">adusumalliyashwanth1214@gmail.com</a></p>
-          <p class="small">Location: Hyderabad, India</p>
-        </div>
-      </aside>
-
-      <section class="content">
-        <div class="card projects" id="projects">
-          <h2>Selected projects</h2>
-
-          <div class="projects-grid">
-            <article class="project">
-              <div class="thumb">Project 1</div>
-              <div class="meta">
-                <h3 id="p1">Dashboard UI</h3>
-                <p class="small">A responsive analytics dashboard built with Vanilla JS and Grid layout for complex data panels.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="thumb">Project 2</div>
-              <div class="meta">
-                <h3 id="p2">E-commerce Theme</h3>
-                <p class="small">Fast, accessible shopping experience with progressive enhancement and good SEO practices.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="thumb">Project 3</div>
-              <div class="meta">
-                <h3 id="p3">Employee performance estimation</h3>
-                <p class="small">Applied K-MEANS clustering to group similar pixel distances, enabling tumor identification</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Get in touch</h2>
-
-          <form class="contact-form" action="#" method="post">
-            <label for="fname">Name</label>
-            <input id="fname" name="name" type="text" placeholder="Your full name" required>
-
-            <label for="emailf">Email</label>
-            <input id="emailf" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Say hi — what do you want to build?" rows="5"></textarea>
-
-            <div class="cta">
-              <button class="btn" type="submit">Send message</button>
-            </div>
-          </form>
-        </div>
-
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer small" style="text-align:center; opacity:0.9;">
-      © <span id="year"></span> Your Name — Built with HTML & CSS Grid
-    </footer>
-  </div>
-
-<script>
-  // small nicety: current year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
+    </body>
 </html>
