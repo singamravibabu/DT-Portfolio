@@ -1,11 +1,12 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Adusumalli Yashwanth — Portfolio</title>
-<style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
   /* ---------- Variables & base ---------- */
   :root{
     --bg: #0d1c31;
@@ -254,124 +255,117 @@
     nav.site-nav { display:none; } /* hide nav for demo; add mobile menu if needed */
   }
 
-  /* small utility */
-  a.link-muted { color:var(--muted); text-decoration:none; font-weight:600; }
-  .small { font-size:0.85rem; color:var(--muted); }
-</style>
-</head>
-<body>
-  <div class="page">
+        </style>
 
-    <header class="site-header">
-      <div class="brand">
-        <div>
-          <div class="title">Yashwanth Adusumalli</div>
-          <div class="subtitle">Developer · Data Science · Data Analyst</div>
+    </head>
+    <body>
+        <div class="page">
+            
+            <header class="site-header">
+                <div class="brand">
+                    <div>
+                        <div class="title">Rajesh</div>
+                        <div class="subtitle">Data Analyst</div>
+                    </div>
+                </div>
+
+                    <nav class="site-nav">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+            </header>
+        
+            <main class="grid-main">
+                <section class="hero card">
+                    <div class="photo">
+                        <img src="rajeshneeli.jpg" alt="Rajesh">
+                    </div>
+
+                    <div class="intro">
+                        <h1 id="hero-title">Hello - I'm Rajesh</h1>
+                        <p class="small">I build clear,detail a project's end-to-end process, including the problem, data cleaning, analysis, visualization, and key insights.</p>
+                        <div class="stats">
+                            <div class="stat"><div class="num">6+</div><div class="label">Years</div></div>
+                            <div class="stat"><div class="num">20+</div><div class="label">Projects</div></div>
+                            <div class="stat"><div class="num">Open</div><div class="label">To Work</div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="sidebar">
+                    <div class="card about" id="about">
+                        <h2>About Me</h2>
+                        <p>I'm highly skilled in SQL, Excel, and Python, 
+                            and I've used these tools extensively to clean, process, and analyze large datasets.</p>
+                    </div>
+
+                    <div class="card contact" id="contact">
+                        <h2>Contact</h2>
+                        <p>
+                            Email: <a class="link-mutd" href="mailto:you@example.com">neelirajesh9593@gmail.com</a></br>
+                            Location: Hyderabad,India
+                        </p>
+                    </div>
+                </aside>
+
+                    <section class="content">
+                        <div class="card projects" id="projects">
+                            <h2>Selectes projects</h2>
+                            <div class="project-grid">
+
+                             <article class="project">
+                              <div class="thumb">Project 1</div>
+                              <div class="mata">
+                                <h3 id="p1">Sales Performance Dashboard</h3>
+                                <p class="small">Designed an interactive Power BI dashboard to monitor key sales metrics such as revenue, profit margins, and regional performance.
+                                Integrated data from multiple Excel and SQL sources to provide real-time insights that helped management identify underperforming regions and improve sales strategies.</p>
+                              </div>
+                             </article>
+
+                             <article class="project">
+                              <div class="thumb">Project 2</div>
+                              <div class="meta">
+                                <h3 id="p2">Customer Churn Analysis</h3>
+                                <p class="small">Conducted an in-depth analysis of telecom customer data using Python, Pandas, and NumPy to identify reasons behind customer churn.
+                                    Built predictive models using Logistic Regression and Decision Trees that achieved over 85% accuracy in forecasting customer churn.</p>
+                              </div>
+                             </article>
+
+                             <article class="project">
+                              <div class="thumb">Project 3</div>
+                              <div class="meta">
+                                <h3 id="p3">COVID-19 Data Visualization</h3>
+                                <p class="small">Collected and cleaned global COVID-19 datasets using Python and Tableau. Visualized the spread of cases, recovery rates, and vaccination progress across countries.
+                                Enhanced decision-making by highlighting key patterns through time-series and heatmap visualizations</p>
+                              </div>
+                             </article>
+                            </div>
+                        </div>
+                
+                    <div class="card">
+                        <h2>Get in touch</h2>
+                        <form class="contact-form" action="#" method="post">
+                            <label for="fname">Name</label>
+                            <input id="fname" name="name" type="email" placeholder="you@example.com" required>
+                            <label for="emailf">Email</label>
+                            <input id="emailf" name="email" type="email" placeholder="you@example.com" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Say hi - what do you want to build ?" rows="5"></textarea>
+                            <div class="cta">
+                              <button class="btn" type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                    </section>
+            </main>
+            <footer class="site-footer small" style="text-align:center; opacity:0.9;">
+             © <span id="year"></span> Your Name — Built with HTML & CSS Grid
+            </footer>
         </div>
-      </div>
-
-      <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main class="grid-main">
-
-      <section class="hero card">
-        <div class="photo">
-          <img src="C:\Users\admin\OneDrive\Pictures\my_pic.JPG" alt="Yashwanth Adusumalli smiling portrait">
-        </div>
-
-        <div class="intro">
-          <h1 id="hero-title">Hello — I'm Yashwanth Adusumalli</h1>
-          <p class="small">I build clear, usable interfaces and craft beautiful front-end experiences. I.</p>
-
-          <div class="stats">
-            <div class="stat"><div class="num">2+</div><div class="label">Years</div></div>
-            <div class="stat"><div class="num">20+</div><div class="label">Projects</div></div>
-            <div class="stat"><div class="num">Open</div><div class="label">To Work</div></div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="sidebar">
-        <div class="card about" id="about">
-          <h2>About me</h2>
-          <p>I am a UI-focused developer building accessible, high-performance web apps. I enjoy translating complex problems into simple interfaces and writing maintainable code.</p>
-        </div>
-
-        <div class="card contact" id="contact">
-          <h2>Contact</h2>
-          <p class="small">Email: <a class="link-muted" href="mailto:adusumalliyashwanth1214@gmail.com">adusumalliyashwanth1214@gmail.com</a></p>
-          <p class="small">Location: Hyderabad, India</p>
-        </div>
-      </aside>
-
-      <section class="content">
-        <div class="card projects" id="projects">
-          <h2>Selected projects</h2>
-
-          <div class="projects-grid">
-            <article class="project">
-              <div class="thumb">Project 1</div>
-              <div class="meta">
-                <h3 id="p1">Dashboard UI</h3>
-                <p class="small">A responsive analytics dashboard built with Vanilla JS and Grid layout for complex data panels.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="thumb">Project 2</div>
-              <div class="meta">
-                <h3 id="p2">E-commerce Theme</h3>
-                <p class="small">Fast, accessible shopping experience with progressive enhancement and good SEO practices.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="thumb">Project 3</div>
-              <div class="meta">
-                <h3 id="p3">Employee performance estimation</h3>
-                <p class="small">Applied K-MEANS clustering to group similar pixel distances, enabling tumor identification</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Get in touch</h2>
-
-          <form class="contact-form" action="#" method="post">
-            <label for="fname">Name</label>
-            <input id="fname" name="name" type="text" placeholder="Your full name" required>
-
-            <label for="emailf">Email</label>
-            <input id="emailf" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Say hi — what do you want to build?" rows="5"></textarea>
-
-            <div class="cta">
-              <button class="btn" type="submit">Send message</button>
-            </div>
-          </form>
-        </div>
-
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer small" style="text-align:center; opacity:0.9;">
-      © <span id="year"></span> Your Name — Built with HTML & CSS Grid
-    </footer>
-  </div>
-
-<script>
-  // small nicety: current year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
+        <script>
+            document.getElementById('year').textContent=new Data().getFullYear();
+        </script>
+    </body>
 </html>

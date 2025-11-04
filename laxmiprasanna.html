@@ -1,13 +1,11 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Adusumalli Yashwanth — Portfolio</title>
-<style>
-  /* ---------- Variables & base ---------- */
-  :root{
+    <head>
+        <meta charset="UTf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY portfolio</title>
+        <style>
+             :root{
     --bg: #0d1c31;
     --card: #071021;
     --muted: #98a0b3;
@@ -257,121 +255,98 @@
   /* small utility */
   a.link-muted { color:var(--muted); text-decoration:none; font-weight:600; }
   .small { font-size:0.85rem; color:var(--muted); }
-</style>
-</head>
-<body>
-  <div class="page">
-
-    <header class="site-header">
-      <div class="brand">
-        <div>
-          <div class="title">Yashwanth Adusumalli</div>
-          <div class="subtitle">Developer · Data Science · Data Analyst</div>
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-headre">
+                <div class="brand">
+                    <div>
+                        <div class="title">Your Name</div>
+                        <div class="subtitle">Frontend Developer . Designer . Creator</div>
+                    </div>
+                </div>
+                    <nav class="site-navigation">
+                        <a href="#about">About</a>
+                        <a href="#project">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+            </header>
+            <main class="grid_main">
+                <section class="hero_card">
+                    <div class="photo">
+                        <img src="C:\Users\laxmi\OneDrive\Desktop\ammu\17-4-24.jpg" alt="photo">
+                    </div>
+                    <div class="info">
+                        <h1 id="hero-title">Hello - I'am Laxmi</h1>
+                        <p class="small">I build clear, interfaces and craft </p>
+                        <div class="stats">
+                            <div class="stat"><div class="num">fresher</div></div>
+                            <div class="stat"><div class="num">6+</div><div class="lable">Project</div></div>
+                            <div class="stat"><div class="num">open to work</div><div class="label"></div></div>
+                        </div>
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    <div class="card about" id="about">
+                        <h2>About me</h2>
+                        <p>I’m passionate about turning data into meaningful insights that drive smart decisions. With a strong interest in data analytics, I enjoy exploring datasets, identifying patterns, and visualizing results to solve real-world problems. I’m familiar with tools like Excel, SQL, Python, Power BI, and Tableau, and continuously learning new techniques to improve my analytical skills.</p>
+                    </div>
+                    <div class="card contact" id="contact">
+                        <h2>Contact</h2>
+                        <p>Email: <a class="link_muted" href="mailto:you@example.com">laxmiptasannayamsani2@gmail.com</a><br>Location:Warangal</p>
+                    </div>
+                    <div class="card skills" id="skills">
+                        <h2>Skills</h2>
+                    <div class="skills list">
+                        <span>C/C++</span> <span>Python</span> <span>HTML,CSS</span> <span>Power BI, Excel</span> <span>Data Analyst</span>    
+                    </div>
+                    </div>
+                </aside>
+                <section class="content">
+                    <div class="card projects" id="projects">
+                        <h2>Selected projects</h2>
+                        <div class="projects_grid">
+                            <article class="projects">
+                                <div class="thumb">Project 1</div>
+                                <div class="meta">
+                                    <h3 id="p1">Dashboard UI</h3>
+                                    <p class="small">A responsive analytics dashboard build with vanilla js and grid</p>
+                                </div>
+                            </article>
+                            <article class="projects">
+                               <div class="thumb">Project 2</div>
+                               <div class="meta">
+                                   <h3 id="p2">E-commerce Theme</h3>
+                                   <p class="small">Fast,accessible shopping with pogressive enhancement</p>
+                               </div>
+                           </article>
+                            <article class="projects">
+                               <div class="thumb">Project 3</div>
+                               <div class="meta">
+                                   <h3 id="p3">Design System</h3>
+                                   <p class="small">A component library with tokens,docs, and examples tha scales</p>
+                               </div>
+                           </article>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Name</h2>
+                        <form action="#",method="post" class="contact_form">
+                            <label for="fname">Name</label>
+                            <input type="text" name="laxmi" placeholder="name" required>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" placeholder="you@email.com" required>
+                            <label for="message">Message</label>
+                            <textarea name="text" id="text_message" placeholder="Hi - how are you"></textarea>
+                            <div class="cta">
+                                <button class="button" type="submit">send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                </aside>
+            </main>
         </div>
-      </div>
-
-      <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main class="grid-main">
-
-      <section class="hero card">
-        <div class="photo">
-          <img src="C:\Users\admin\OneDrive\Pictures\my_pic.JPG" alt="Yashwanth Adusumalli smiling portrait">
-        </div>
-
-        <div class="intro">
-          <h1 id="hero-title">Hello — I'm Yashwanth Adusumalli</h1>
-          <p class="small">I build clear, usable interfaces and craft beautiful front-end experiences. I.</p>
-
-          <div class="stats">
-            <div class="stat"><div class="num">2+</div><div class="label">Years</div></div>
-            <div class="stat"><div class="num">20+</div><div class="label">Projects</div></div>
-            <div class="stat"><div class="num">Open</div><div class="label">To Work</div></div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="sidebar">
-        <div class="card about" id="about">
-          <h2>About me</h2>
-          <p>I am a UI-focused developer building accessible, high-performance web apps. I enjoy translating complex problems into simple interfaces and writing maintainable code.</p>
-        </div>
-
-        <div class="card contact" id="contact">
-          <h2>Contact</h2>
-          <p class="small">Email: <a class="link-muted" href="mailto:adusumalliyashwanth1214@gmail.com">adusumalliyashwanth1214@gmail.com</a></p>
-          <p class="small">Location: Hyderabad, India</p>
-        </div>
-      </aside>
-
-      <section class="content">
-        <div class="card projects" id="projects">
-          <h2>Selected projects</h2>
-
-          <div class="projects-grid">
-            <article class="project">
-              <div class="thumb">Project 1</div>
-              <div class="meta">
-                <h3 id="p1">Dashboard UI</h3>
-                <p class="small">A responsive analytics dashboard built with Vanilla JS and Grid layout for complex data panels.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="thumb">Project 2</div>
-              <div class="meta">
-                <h3 id="p2">E-commerce Theme</h3>
-                <p class="small">Fast, accessible shopping experience with progressive enhancement and good SEO practices.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="thumb">Project 3</div>
-              <div class="meta">
-                <h3 id="p3">Employee performance estimation</h3>
-                <p class="small">Applied K-MEANS clustering to group similar pixel distances, enabling tumor identification</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Get in touch</h2>
-
-          <form class="contact-form" action="#" method="post">
-            <label for="fname">Name</label>
-            <input id="fname" name="name" type="text" placeholder="Your full name" required>
-
-            <label for="emailf">Email</label>
-            <input id="emailf" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Say hi — what do you want to build?" rows="5"></textarea>
-
-            <div class="cta">
-              <button class="btn" type="submit">Send message</button>
-            </div>
-          </form>
-        </div>
-
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer small" style="text-align:center; opacity:0.9;">
-      © <span id="year"></span> Your Name — Built with HTML & CSS Grid
-    </footer>
-  </div>
-
-<script>
-  // small nicety: current year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
+    </body>
 </html>
